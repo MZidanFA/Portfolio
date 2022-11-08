@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/da97e7e681.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/Z IDANResizeLogo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Pharmacist</p>
+                    <h1>Hi, I'm <span>Muhammad</span><br>Zidan From Indonesia</h1>
+                </div>
+            </div>
+        </div>
+        <!--About-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/DSC0385900009.JPG" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a fresh graduate of Profesional Apothecary from University of Jember with GPA 3,84. I have experience internship as apothecary assistant in drugstore for 1 month and pharmaceutical industry for 2 months. I have a good stock of knowledge about GMP and can work with teams and individuals, and can adapt to new environments. I am also interested about front end web development.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Pharmacist</span><br>Clinical Pharmacist and Industrial Pharmacist</li>
+                                <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>April 2022 - May 2022</span><br>Apothecary Intership at PT Intijaya Metaratna Pharmindo</li>
+                                <li><span>March 2022 - April 2022</span><br>Independent Study About Frond End Web Development at Progate</li>
+                                <li><span>December 2021 - January 2022</span><br>Apothecary Intership at Zora Farma</li>
+                                <li><span>February 2021 - August 2021</span><br>Laboratory Assistant in Pharmacy Biology at Faculty of Pharmacy, University of Jember</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>Front End Web Development at Progate</li>
+                                <li><span>2021 - 2022</span><br>Pharmacist Professional Degree from University of Jember</li>
+                                <li><span>2017 - 2021</span><br>Bachelor of Pharmacy from University of Jember</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Designing web interface using html css javascript.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-pills"></i>
+                        <h2>Pharmacist</h2>
+                        <p>Hire me as Industrial Pharmacist or Clinical Pharmacist.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- portfolio-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Web Design Interface</h3>
+                            <p>The web presents about member of team project from Digitalent Scholarship Program. Let's connect.</p>
+                            <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Calculator Web</h3>
+                            <p>The web presents about individual project from Digitalent Scholarship Program.</p>
+                            <a href="#"><i class="fa-solid fa-calculator"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Kemuning Project</h3>
+                            <p>This is my thesis project at Faculty of Pharmacy, University of Jember. This project tells about Activity of Lipase Inhibitor from Kemuning Leaves.</p>
+                            <a href="#"><i class="fa-solid fa-dna"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!-- contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> zidanf648@gmail.com</p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i> 082132979808/081249074763</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/mzidanfa/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/zidanf648/"><i class="fa-brands fa-instagram"></i></i></a>
+                            <a href="https://github.com/MZidanFA"><i class="fa-brands fa-github"></i></i></a>
+                        </div>
+                        <a href="images/CV Muhammad Zidan F A.pdf" download class="btn bnt2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email required">
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">submit</button>
+                        </form>
+                        <span id="msg">Hiii</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Zidan. Just Trial <i class="fa-solid fa-shuttle-space"></i></p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu")
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyIIY_-9k-xKjcj5gaeaQZyqNQQg4-oRzNHQZHaCV2IPD7loSyG5xkfYZUyjwcaHSo/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>    
+    </body>
+</html>
